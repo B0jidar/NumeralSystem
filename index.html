@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Калкулатор на бройни системи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Калкулатор на бройни системи</h2>
+
+    <input type="text" id="number" placeholder="Въведи число">
+
+    <label>От бройна система:</label>
+    <select id="fromBase">
+        <option value="2">Двоична (2)</option>
+        <option value="8">Осмична (8)</option>
+        <option value="10" selected>Десетична (10)</option>
+        <option value="16">Шестнадесетична (16)</option>
+    </select>
+
+    <label>Към бройна система:</label>
+    <select id="toBase">
+        <option value="2">Двоична (2)</option>
+        <option value="8">Осмична (8)</option>
+        <option value="10">Десетична (10)</option>
+        <option value="16" selected>Шестнадесетична (16)</option>
+    </select>
+
+    <button onclick="convert()">Преобразувай</button>
+
+    <div id="result"></div>
+    <div id="allResults"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
